@@ -2,6 +2,9 @@
 
 **注意**: 本示例为测试版本, 仅仅用于现阶段的测试需求!
 
+## 环境
+1.安装[python3](https://www.python.org/)；
+2.操作系统：ubuntu；
 
 
 ## 用途
@@ -20,7 +23,7 @@
 
 ## 使用步骤
 
-1. 向 [evercad](https://www.everxyz.com/) 申请 [stp server](https://test.everxyz.com/stp/) 用户名和密码
+1. 向 [evercad](https://www.everxyz.com/) 申请 [stp server](https://test.everxyz.com/stp/) 用户名和密码，联系方式见官网
 
 2. 登录 [stp server](https://test.everxyz.com/stp/), 创建新的 clientid, 填写您网站的域名 (eg, `localhost:8080`)
 
@@ -29,7 +32,7 @@
 4. 编辑 `config.py`, 配置下列几项:
 
    ```python
-   # 以下 3 条内容需要向 evercad 申请                                 
+   # 以下 3 条内容需联系 evercad 申请                                
    EVERCAD_USERNAME = os.environ.get('EVERCAD_USERNAME') or 'username'
    EVERCAD_PWD = os.environ.get('EVERCAD_PWD') or 'pwd'               
    CLIENTID = os.environ.get('CLIENTID') or 'your client id'          
@@ -38,7 +41,7 @@
 5. 创建数据库:
 
    ```bash
-   $ ./manage.py shell
+   $ ./manage.py shell （windows下则运行命令:python manage.py shell）
    >> db.create_all()
    >> quit()
    ```
@@ -46,7 +49,8 @@
 6. 运行服务器
 
    ```bash
-   $ ./manage.py runserver -p 8080
+   $ ./manage.py runserver -p 8080 (windows下则运行命令:python manage.py runserver -p 8080)
    ```
-
-   ​
+7. 运行后浏览器访问localhost:8080,即可进入前端页面
+ 
+8. 前端页面为模拟用户的主页，主页点“注册”并注册后，用注册的用户名登录，后可上传stp文件并体验渲染。
