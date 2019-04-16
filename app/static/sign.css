@@ -1,0 +1,32 @@
+
+.sign {
+  width: 600px;
+  height: 400px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 3px 3px 3px #f0f0f0;
+  margin: 100px auto;
+  text-align: center;
+}
+
+form input {
+  width: 80%;
+  line-height: 30px;
+  padding: 6px 10px;
+  margin: 10px 0;
+}
+
+input[type='submit'] {
+  margin-top: 50px;
+  height: 40px;
+  background: #2375e1;
+  color: white;
+  border: 1px solid #2375e1;
+}
+
+.jump {
+  text-align: right;
+  margin-right: 50px;
+}
+.alert-warning {
+  color: red;
+}

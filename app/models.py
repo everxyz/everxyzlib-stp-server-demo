@@ -22,3 +22,5 @@ class File(BaseModel, db.Model):
     __tablename__ = 'files'
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, nullable=False)
+    filename = db.Column(db.String(128), nullable=False)
+    modelid = db.Column(db.String(64), nullable=False, unique=True)

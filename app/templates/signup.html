@@ -1,0 +1,17 @@
+{% extends "sign.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/sign.css">
+{% endblock %}
+
+{% block body %}
+<div class="sign">
+  <h3>注册</h3>
+  <form action="/signup" method="post">
+    <input type="text" name="name" placeholder="请输入用户名" autofocus>
+    <input type="password" name="pwd" placeholder="请输入密码">
+    <input type="submit" value="提交">
+  </form>
+  <p class='jump'>已有帐号, <a href="/login">登录</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/upload.css">
+{% endblock %}
+
+{% block body %}
+
+<h1>上传模型</h1>
+<div class="upload">
+  <form action="/upload" method='post' enctype='multipart/form-data'>
+    <input type="file" name='stpfile'>
+    <br>
+    <br>
+    <input type="submit" value='确定'>
+  </form>
+</div>
+
+{% if stp_file %}
+<div class="file">
+  上传 <a href="/models/{{ stp_file.modelid }}">{{ stp_file.filename }}</a> 成功!
+</div>
+{% endif %}
+
+{% endblock %}

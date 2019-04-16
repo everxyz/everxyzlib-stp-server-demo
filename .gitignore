@@ -1,1 +1,9 @@
 __pycache__
+*.swp
+*.sqlite
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+node_modules
+files

@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<script src='https://test.everxyz.com/stp/static/everxyz-stp.js'></script>
+<link rel="stylesheet" href="/static/fileview.css">
+{% endblock %}
+
+{% block body %}
+<h1>模型查看</h1>
+<div id='hello'></div>
+
+<script>
+  window.onload = function () {
+    var clientid = '{{ clientid }}'
+    var modelid = '{{ modelid }}'
+
+    var options = {
+      toolbar: {
+        modeltree: true,
+        view: true,
+        rendermode: true
+      }
+    }
+
+    everRender = evercad.renderStp('#hello', { clientid, modelid }, options)
+  }
+</script>
+{% endblock %}

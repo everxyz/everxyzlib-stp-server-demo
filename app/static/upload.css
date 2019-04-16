@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+}
+.upload {
+  max-width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #2375e1;
+}
+
+.upload input[type=submit] {
+  background: #2375e1;
+  color: white;
+  border: none;
+  padding: 6px 30px;
+}
+
+.file {
+  margin-left: 100px;
+}

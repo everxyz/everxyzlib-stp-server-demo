@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/models.css">
+{% endblock %}
+
+{% block body %}
+
+<h1>所有模型</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>文件名</th>
+      <th>modelid</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for file in files %}
+    <tr>
+      <td>{{ file.filename }}</td>
+      <td>{{ file.modelid }}</td>
+      <td>
+        <a href="/models/{{ file.modelid }}">查看</a>&nbsp;
+        <a href="/models/delete/{{ file.modelid }}">删除</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

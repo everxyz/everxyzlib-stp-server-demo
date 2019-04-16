@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>evercad api demo</title>
+    {% block head %}
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block flash %}
+    {% for message in get_flashed_messages() %}
+    <div class='alert alert-warning'>
+      {{ message }}
+    </div>
+    {% endfor %}
+    {% endblock %}
+
+    {% block body %}
+    {% endblock %}
+  </body>
+
+</html>

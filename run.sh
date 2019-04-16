@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./manage.py runserver -p 5656
+./manage.py runserver -p 8080

@@ -1,0 +1,26 @@
+
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+tr:hover {
+  background: #f0f0f0;
+}
+
+td {
+  padding: 4px 20px;
+}
+

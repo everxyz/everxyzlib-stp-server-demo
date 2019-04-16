@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>evercad api demo</title>
+    <link rel="stylesheet" href="/static/index.css">
+    {% block head %}
+    {% endblock %}
+  </head>
+
+  <body>
+
+    <header>
+      <a href="/">主页</a>
+      <a href="/upload">上传文件</a>
+      <a href="/models">查看所有模型</a>
+      <span>{{ name }}</span> /
+      <a href="/logout">注销</a>
+    </header>
+
+    {% block flash %}
+    {% for message in get_flashed_messages() %}
+    <div class='alert alert-warning'>
+      {{ message }}
+    </div>
+    {% endfor %}
+    {% endblock %}
+
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+      <hr>
+      <div>
+        <a href="https://www.everxyz.com" target="_blank">evercad 官网</a><br>
+        <a href="https://www.everxyz.com/api/docs/" target="_blank">evercad 开发者文档</a>
+      </div>
+    </footer>
+  </body>
+
+</html>

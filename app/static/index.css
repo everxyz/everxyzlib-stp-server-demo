@@ -1,0 +1,36 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 40px;
+  border-bottom: 1px solid #a0a0a0;
+  text-align: right;
+}
+header a {
+  display: inline-block;
+  margin: 0 30px;
+}
+header a:last-child {
+  margin: 0 4px;
+}
+.alert-warning {
+  color: red;
+}
+
+h1 {
+  color: steelblue;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
