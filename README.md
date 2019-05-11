@@ -2,6 +2,8 @@
 
 **注意**: 本示例为测试版本, 仅仅用于现阶段的测试需求!
 
+**此demo适用于Everxyz的EverAPI产品，运行此demo前，请先阅读[EverAPI开发文档](https://www.everxyz.com/api)的stp格式部分。**
+
 ## 环境
 1.安装[python3](https://www.python.org/)；
 2.操作系统：ubuntu；
